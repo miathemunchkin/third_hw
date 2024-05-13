@@ -1,5 +1,5 @@
 #Третє дз
-#Перша частина: Многопотокове копіювання файлів
+#Перша частина
 
 import os
 import shutil
@@ -24,7 +24,7 @@ def copy_files(source_dir, target_dir='dist'):
         for root, dirs, files in os.walk(source_dir):
             pool.apply_async(process_directory, args=(root, files))
 
-#Друга частина: Паралельне факторизація чисел
+#Друга частина
 
 import multiprocessing
 
